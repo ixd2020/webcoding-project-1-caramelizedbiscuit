@@ -3,9 +3,9 @@
 body {
   font-family: "Garamond Premiere Pro", serif;
   margin: 2em;
-  background-image: url("https://cdn.glitch.com/13201e79-aabc-4663-8557-06900c645b0f%2Fpls.jpg?v=1605411619237");
-  background-colour: white;
-  background-repat: no repeat;
+  color: white;
+  background-color: orange;
+  background-repeat: no repeat;
   background-size: 100%;
 }
 
@@ -15,28 +15,28 @@ h1 {
 }
 
 h2 {
-  font-style: italic;
+  font-family: "Rubik", sans-serif;
   color: #FFFFFF;
 }
 
 h3 {
   font-family: "Rubik", sans-serif;
-  color: #A9A9A9;
+  color: #FFFFFF;
 }
 
 h4 {
   font-family: "Rubik", sans-serif;
-  color: #A9A9A9;
+  color: #FFFFFF;
 }
 
 h5 {
   font-family: "Rubik", sans-serif;
-  color: #A9A9A9;
+  color: #FFFFFF;
 }
 
 h6 {
   font-family: "Rubik", sans-serif;
-  color: #A9A9A9;
+  color: #FFFFFF;
 }
 
 * {
@@ -44,9 +44,9 @@ h6 {
 }
 
 .box {
-  border: 5px solid grey;
+  border: 8px solid grey;
   float: left;
-  padding: 50px;
+  padding: 100px;
   height: 300px;
 }
 
@@ -85,6 +85,14 @@ h6 {
   width: 100%;
 }
 
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .threecol,
+  .twocol,
+  .onecol {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
 a {
   border: 2px solid;
   whitepadding: 10px;
@@ -109,4 +117,42 @@ a:hover {
 /* selected link */
 a:active {
   color: #B0C4DE;
+}
+
+table,
+th,
+td {
+  margin: 0px auto;
+  border: 1px solid #FFFFFF;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+table {
+  background-color: #F8EEEC;
+}
+
+.important {
+  font-weight: bold;
+  background-color: pink;
+  padding: 20px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.pink {
+  color: pink;
+  padding: 20px;
+  border: 5px solid white;
+  background-color: lightblue;
+}
+
+.cuteasabutton {
+  background-color: pink;
+  padding: 20px;
+  font-weight: bold;
+  font-size: xx-large;
 }
