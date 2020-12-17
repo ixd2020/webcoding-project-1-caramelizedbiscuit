@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Hello!</title>
-
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
@@ -14,8 +12,75 @@
     <script src="/script.js" defer></script>
   </head>
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+  <link
+    rel="icon"
+    href="https://cdn.glitch.com/11bfafbf-24aa-41d6-b8d2-789074650d6c%2Ffemale%20artist.png?v=1607671848176"
+    type="image/x-icon"
+  />
+
+  <h1>Exhibitions</h1>
+  <head>
+    <p>
+      Shirin's works has led her to be part of distinguished exhibitions in many
+      museums. Her first solo exhibition was at Franklin Furnace in New York in
+      1993. Since then, Neshat has been featured in solo exhibitions at the
+      Annina Nosei Gallery, New York in 1995, Museo de Arte Moderno, Mexico
+      City; Contemporary Arts Museum, Houston; Walker Art Center, Minneapolis
+      (2002); Castello di Rivoli, Turin; Dallas Museum of Art (2000); Wexner
+      Center for the Arts, Columbus; the Art Institute of Chicago; the
+      Serpentine Gallery, London; Museo de Arte Contemporáneo de Castilla y
+      León, León; and the Hamburger Bahnhof, Berlin (2005). Additionally, in
+      2008, her solo exhibition "Women Without Men" opened at the ARoS Aarhus
+      Kunstmuseum, Denmark, and traveled to the National Museum of Contemporary
+      Art, Athens, and to the Kulturhuset, Stockholm. major retrospective of
+      Neshat's work, organized by the Detroit Institute of Arts, opened 2013. In
+      2019, The Broad Museum in Los Angeles, presented Shirin Neshat's largest
+      exhibition internationally, 'I Will Greet the Sun Again'. Shirin has made
+      her mark almost everywhere and it's extremely prominent of her.
+    </p>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <img
+      src="https://cdn.glitch.com/11bfafbf-24aa-41d6-b8d2-789074650d6c%2Fphoto6172238351248239398.jpg?v=1608098356847"
+      alt="sn2"
+      style="width:100%;"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<br>
+    <script>
+      $(document).ready(function() {
+        $("div.exbutton").click(function() {
+          $("h2").toggleClass("blue");
+          $("div").toggleClass("important");
+        });
+      });
+    </script>
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <h2>Learn more about Shirin Neshat's involvement in various exhibitions</h2>
+
+    <div>
+      <a href="https://www.guggenheim.org/artwork/artist/shirin-neshat"
+        >Shirin Neshat & Venues on Guggenheim
+      </a>
+    </div>
+    <br />
+
+    <div class="exbutton">click to find out more</div>
+  </body>
+  <footer>
+    <p>
+      © 2020 Sarah's Official Shirin Neshat website
+    </p>
+  </footer>
 </html>

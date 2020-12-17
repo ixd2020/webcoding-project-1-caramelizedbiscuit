@@ -1,3 +1,5 @@
+<!-- INDEX PAGE FOR LANDING PAGE #1 -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,84 +7,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>SHIRIN NESHAT</title>
-
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
-  <body>
-    <h1>SHIRIN</h1>
-    <h1>NESHAT</h1>
 
-    <p>
-      <a href="/about.html">Go to About</a> /
-      <a href="/artworks.html">Go to Artworks</a> /
-      <a href="/exhibitions.html">Go to Exhibitions</a> /
-      <a href="/awards.html">Go to Awards</a> /
-      <a href="/csstest.html">Go to CSS Test</a> /
-      <a href="/domtest.html"> Go to DOM Test</a> /
-      <a href="/omgimcrying.html">Go to jquery Test</a>
-    </p>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+    rel="stylesheet"
+  />
 
-    <h2>
-      <b><em>Welcome to the Official Shirin Neshat webpage</em></b>
-    </h2>
+  <link
+    rel="icon"
+    href="https://cdn.glitch.com/11bfafbf-24aa-41d6-b8d2-789074650d6c%2Ffemale%20artist.png?v=1607671848176"
+    type="image/x-icon"
+  />
 
-    <h3>
-      Get to know the Iranian visual artist!
-    </h3>
+  <title>everything shirin neshat</title>
+  
+  <div id="preloader">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+  </div>
 
-    <img
-      src="https://cdn.glitch.com/13201e79-aabc-4663-8557-06900c645b0f%2Fphoto6172238351248239398.jpg?v=1605751772533"
-      style="width:100%;"
-    />
+  <body onload="loadingfinished()">
+    <h1>everything shirin neshat</h1>
 
-    <h6>
-      <table style="width:100%">
-        <tr>
-          <th>Name:</th>
-          <td>Shirin Neshat</td>
-        </tr>
-        <tr>
-          <th rowspan="2">Telephone:</th>
-          <td>123456789</td>
-        </tr>
-        <tr>
-          <td>123456789</td>
-        </tr>
-        <tr>
-          <th>Address:</th>
-          <td>Qazvin, Iran</td>
-        </tr>
-      </table>
-    </h6>
-    <h4>
-      <p>
-        <em
-          ><b>Lorem Ipsum</b>is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s, when an unknown printer took a galley
-          of type and scrambled it to make a type specimen book.</em
-        >
-      </p>
-    </h4>
-
-    <h5>
-      <p>
-        It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged. It was
-        popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software
-        like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
-    </h5>
-
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+    <div class="container">
+      <div class="navbar">
+        <div style="text-align:center;">
+          <ul>
+            <li><a href="/index.html" class="active">Home</a></li>
+            <!--working-->
+            <li><a href="/abouther.html">About Her</a></li>
+            <!--working-->
+            <li><a href="/awards.html">Awards</a></li>
+            <li><a href="/exhibitions.html">Exhibitions</a></li>
+            <!--working-->
+            <li><a href="/works.html">Works</a></li>
+          </ul>
+          <div class="hamburger">
+            <a href="#" onclick="mobilemenu()">
+              <i class="fa fa-bars fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/-FYX_EiFWW8"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
   </body>
-</html>
+ </html>
+
+<p id="demo"></p>
+<div
+  onmouseover="mOver(this)"
+  onmouseout="mOut(this)"
+  style="background-color:#283747;width:500px;height:20px;padding:4px;border:5px solid white;text-align:center;
+  justify-content:center;"
+>
+  Welcome
+</div>
+<br />
+<button id="myBtn">click to learn more</button>
+
+<script>
+  function mOver(obj) {
+    obj.innerHTML = "feel free to look around";
+  }
+
+  function mOut(obj) {
+    obj.innerHTML = "learn more about the contemporary artist";
+  }
+
+  document.getElementById("myBtn").addEventListener("click", function() {
+    alert("welcome to everything shirin neshat- begin by clicking About Her");
+  });
+</script>
+ 
+<footer>
+    <p>
+      © 2020 Sarah's Official Shirin Neshat website
+    </p>
+  </footer>
